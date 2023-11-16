@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+*{
+  padding: 0; margin: 0; box-sizing: border-box;
+  font-size: 16px; color: #333;
+}
+ul{list-style: none;}
+a{text-decoration: none;}
+img{display: block; border: none;}
+button{border: none; background-color: transparent; cursor: pointer;}
+
+/* base */
+
+.content{width: 100%; padding: 130px 0;}
+.inner{width: 1200px; margin: 0 auto;}
+.wrap{display: flex; flex-wrap: wrap; justify-content: flex-start; align-items: center;}
+.content .title{margin: 0 0 20px; font-size: 28px; text-transform: uppercase; text-align: center;}
+.content .txt{margin: 0 0 40px; text-align: center; color: #777;}
+
+@media screen and (max-width:1200px) {
+  .content{padding: 100px 30px;}
+  .inner{width: 100%;}
+  .gnb{display: none;}
+}
+@media screen and (max-width:960px) {
+  .content{padding: 80px 20px;}
+  .inner{width: 100%;}
+  .gnb{display: none;}
+}
+@media screen and (max-width:480px) {
+  .content{padding: 60px 20px;}
+  .inner{width: 100%;}
+  .gnb{display: none;}
+}
+
+/* header */
+
+header{position: relative; width: 100%; padding-top: 10px;}
+header .logo img{margin: 0 auto 10px;}
+header .top_nav{
+  position: absolute; right: 5%; top: 40%;
+  display: flex; align-items: center;
+}
+header .lang{width: 100px; height: 20px; background-color: pink; font-size: 18px; font-weight: 500; cursor: pointer;}
+header .lang::after{
+  position: absolute; left: 0; bottom: 0;
+  content: '';
+  width: 60px; height: 1px; background-color: #333;
+}
+select{
+  border: none; border-radius: none;
+  -webkit-appearance: none; -moz-appearance: none; appearance: none;
+}
+
+/* select:focus{outline: 0;} */
+
+header .top_nav .subcribe{width: 100px; height: 30px; margin: 0 20px; border-radius: 20px; background-color: #333; color: #fff;}
+header .top_nav .subcribe:hover{border: 1px solid #333; background-color: #fff; color: #333; transition: 0.2s;}
+header .panel{cursor: pointer;}
+
+/* gnb */
+
+.gnb .wrap{justify-content: center;}
+.gnb > ul > li{padding: 10px 20px;}
+.gnb > ul > li a{
+  font-size: 22px; font-weight: 500;
+  text-transform: uppercase;
+}
+
+/* visual */
+
+.visual{width: 100%; height: 700px; background-image: url(/public/images/main_01.png); background-repeat: no-repeat; background-position: center;background-size: cover;
+}
+.visual img{width: 100%; height: 100%;}
+
+/* fakeme23 */
+
+.fakeme23 .tab_btn{width: 100%; text-align: center;}
+.fakeme23 .tab_btn > a{
+  display: inline-block;
+  width: 100px; margin: 0 10px 40px; border-radius: 15px; border: 1px solid #999;
+  font-size: 16px; line-height: 30px; text-align: center; transition: 0.5s; color: #999;
+}
+.fakeme23 .tab_btn > a:hover{background-color: #333; border-color: #333; color: #fff;}
+.fakeme23 .pic{width: 280px; margin: 0 10px 20px;}
+.fakeme23 .pic img{width: 100%; height: 100%;}
+
+@media screen and (max-width: 1200px) {
+  .fakeme23 .pic{width: 22.5%; margin: 1% 10px;}
+}
+@media screen and (max-width: 960px) {
+  .fakeme23 .wrap{justify-content: center;}
+  .fakeme23 .pic{width: 37.5%; margin: 1.5% 10px;}
+}
+@media screen and (max-width: 768px) {
+  .fakeme23 .pic{width: 47%; margin: 1.5% 20px;}
+}
+
+/* about */
+
+.about .pic{width: 580px; height: 300px; margin: 60px 0 100px;}
+.about .wrap:first-of-type .pic{width: 580px; height: 600px;}
+.about img{width: 100%; height: 100%;}
+.about .info{display: flex; flex-direction: column; justify-content: center; align-items: flex-start; width: 580px; height: 300px; padding: 25px;}
+.about h3{margin-bottom: 28px; font-size: 28px;}
+.about .txt{font-size: 16px; line-height: 30px; text-align: left;}
+.about .wrap:nth-of-type(2) .pic{order: 1;}
+
+@media screen and (max-width:1200px) {
+  .about .wrap{justify-content: center;}
+}
+
+/* banner */
+
+.banner{
+  position: relative;
+  width: 100%; height: 350px; padding: 280px 0;
+  background-image: url(/public/images/banner_add.png); background-repeat: no-repeat; background-position: center;
+}
+.banner h3{
+  position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%);
+  font-size: 28px; font-weight: 700; color: #fff;
+}
+
+/* best */
+
+.best{width: 100%; padding: 220px 0;}
+.best .txt{margin-bottom: 60px;}
+.best .box{width: 380px; height: 400px; margin-bottom: 20px;}
+.best img{width: 100%; height: 100%;}
+.best .box h4{width: 100%; height: 100%; display: flex; justify-content: center; align-items: center;}
+
+@media screen and (max-width:1200px) {
+  .best .box{width: 48.5%; height: 100%;}
+}
+@media screen and (max-width:768px) {
+  .best .box{width: 100%; height: 100%;}
+}
+
+/* footer */
+
+footer{width: 100%; height: 250px; background-color: #F0F0F0;}
+footer .inner{display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 20px;}
+footer .txt{margin-top: 30px; line-height: 24px; font-size: 16px; font-weight: 400; text-align: center;}
+footer .copyright{margin-top: 30px; font-size: 16px; color: #666;}
+
+
+/* main_manu */
+
+/* product */
+.product .tab_btn a{
+  display: inline-block;
+  width: 100px; margin: 0 10px 40px; border-radius: 15px; border: 1px solid #999;
+  font-size: 16px; line-height: 30px; text-align: center; transition: 0.5s; color: #999;
+}
+.product .tab_btn > a:hover{background-color: #333; border-color: #333; color: #fff;}
+.product .ProductBox{width: 270px; margin: 0 30px 30px 0;}
+.product .ProductBox img{width: 100%; height: 100%;}
+
+/* about */
+
+.about_f .wrap{justify-content: center;}
+.about_f .menu button{
+  width: 100px; margin: 0 10px 40px; border-radius: 15px; border: 1px solid #999;
+  font-size: 16px; line-height: 30px; text-align: center; transition: 0.5s; color: #999;
+}
+.about_f .menu button:hover{background-color: #333; border-color: #333; color: #fff;}
+
+.about_f .box.company{width: 100%; padding-top: 50px; border: 1px solid #333;}
+.about_f .wrap{margin-bottom: 50px; flex-direction: column;}
+.about_f .title{margin: 40px 0; font-size: 22px; color: #666;}
+.about_f .txt{font-size: 14px; color: #999;}
+
+.about_f .member{width: 100%; height: 400px; background-color: coral;}
