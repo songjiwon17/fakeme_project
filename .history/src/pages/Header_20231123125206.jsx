@@ -2,12 +2,6 @@ import {Link, NavLink} from 'react-router-dom';
 import LocaleSelect from '../components/LocaleSelect';
 import useTranslate from '../hokks/useTranslate';
 
-function getLinkStyle({isActive}){
-  return{
-    textDecoration: isActive? 'underline' : undefined,
-  }
-}
-
 export function Header(){
   const t = useTranslate();
 
@@ -18,10 +12,10 @@ export function Header(){
           <div className='gnb'>
             <ul className='wrap'>
               <li><NavLink to ='/about' style={getLinkStyle}>about</NavLink></li>
-              <li><NavLink to ='/product' style={getLinkStyle}>product</NavLink></li>
-              <li><NavLink to ='/frame' style={getLinkStyle}>frame</NavLink></li>
-              <li><NavLink to ='/contact' style={getLinkStyle}>contact</NavLink></li>
-              <li><NavLink to ='/fakeme' style={getLinkStyle}>fakeme</NavLink></li>
+              <li><NavLink to ='/product'>product</NavLink></li>
+              <li><NavLink to ='/frame'>frame</NavLink></li>
+              <li><NavLink to ='/contact'>contact</NavLink></li>
+              <li><NavLink to ='/fakeme'>fakeme</NavLink></li>
             </ul>
           </div>
         </div>

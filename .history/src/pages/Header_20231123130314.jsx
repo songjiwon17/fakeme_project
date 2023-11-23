@@ -5,6 +5,7 @@ import useTranslate from '../hokks/useTranslate';
 function getLinkStyle({isActive}){
   return{
     textDecoration: isActive? 'underline' : undefined,
+    transition: isActive? '0.6s' : undefined,
   }
 }
 
