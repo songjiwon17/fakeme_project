@@ -26,8 +26,8 @@ function App() {
         <Route path='/frame' element={<Frame />} />
         <Route path='/contact' element={<Contact />} />
         <Route path='/fakeme' element={<Fakeme />} />
-        <Route path='*' element={<NotFoundPage />} />
       </Routes>
+      <Routes><Route path='*' element={<NotFoundPage />} /></Routes>
       <Footer />
     </div>
     </LocaleProvider>

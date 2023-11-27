@@ -15,8 +15,8 @@ function App() {
   return (
     <LocaleProvider defaultValue={'ko'}>
     <div className='main'>
-      <Header />
       <Routes>
+      <Header />
         <Route path='/' element={<Main />} />
         <Route path='/about' element={<About />}>
           <Route path='company' element={<AboutCompany />} />

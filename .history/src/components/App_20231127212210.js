@@ -15,8 +15,8 @@ function App() {
   return (
     <LocaleProvider defaultValue={'ko'}>
     <div className='main'>
-      <Header />
       <Routes>
+      <Header />
         <Route path='/' element={<Main />} />
         <Route path='/about' element={<About />}>
           <Route path='company' element={<AboutCompany />} />
@@ -27,8 +27,9 @@ function App() {
         <Route path='/contact' element={<Contact />} />
         <Route path='/fakeme' element={<Fakeme />} />
         <Route path='*' element={<NotFoundPage />} />
+        <Footer />
       </Routes>
-      <Footer />
+      
     </div>
     </LocaleProvider>
   );
