@@ -2,8 +2,8 @@ import { useState } from "react";
 import product from "../data/product";
 
 export function Product(){
-    const [Menu, setMenu] = useState('all');
-    const [productInfo, setProductInfo] = useState(product);
+    let [Menu, setMenu] = useState('all');
+    let [productInfo, setProductInfo] = useState(product);
 
     return(
         <div className="product content">

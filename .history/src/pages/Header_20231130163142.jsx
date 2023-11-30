@@ -27,7 +27,7 @@ export function Header(){
         </div>
         <div className='top_nav'>
           <LocaleSelect/>
-          <Link to='/login'><button type='button' className='subcribe'>{t('subscribe button')}</button></Link>
+          <button type='button' className='subcribe'>{t('subscribe button')}</button>
           <div className='panel' onClick={()=>{
             console.log('test');
             }}>

@@ -8,7 +8,6 @@ import { Product } from '../pages/Product';
 import { Frame } from '../pages/Frame';
 import { Contact } from '../pages/Contact';
 import { Fakeme } from '../pages/Fakeme';
-import {Login} from '../pages/Login';
 import { LocaleProvider } from '../contexts/LocaleContext';
 import NotFoundPage from '../pages/NotFoundPage';
 
@@ -27,7 +26,7 @@ function App() {
         <Route path='/frame' element={<Frame />} />
         <Route path='/contact' element={<Contact />} />
         <Route path='/fakeme' element={<Fakeme />} />
-        <Route path='/login' element={<Login />} />
+        <Route path='/login' element={<Fakeme />} />
         <Route path='*' element={<NotFoundPage />} />
       </Routes>
       <Footer />

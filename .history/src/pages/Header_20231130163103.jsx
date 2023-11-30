@@ -27,12 +27,11 @@ export function Header(){
         </div>
         <div className='top_nav'>
           <LocaleSelect/>
-          <Link to='/login'><button type='button' className='subcribe'>{t('subscribe button')}</button></Link>
+          <button type='button' className='subcribe'>{t('subscribe button')}</button>
           <div className='panel' onClick={()=>{
             console.log('test');
-            }}>
-              <img src='/images/panel_icon.png' alt='패널아이콘'/>
-          </div>
+            
+            }}><img src='/images/panel_icon.png' alt='패널아이콘'/></div>
         </div>
       </header>
     )

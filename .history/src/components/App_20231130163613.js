@@ -8,7 +8,6 @@ import { Product } from '../pages/Product';
 import { Frame } from '../pages/Frame';
 import { Contact } from '../pages/Contact';
 import { Fakeme } from '../pages/Fakeme';
-import {Login} from '../pages/Login';
 import { LocaleProvider } from '../contexts/LocaleContext';
 import NotFoundPage from '../pages/NotFoundPage';
 
